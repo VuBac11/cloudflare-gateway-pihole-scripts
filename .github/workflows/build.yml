@@ -32,6 +32,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
+          ref: refs/heads/v1
 
       - name: Get Node Version
         run: echo "NODE_VERSION=$(cat .node-version)" >> $GITHUB_ENV
